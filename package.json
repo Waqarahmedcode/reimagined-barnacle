@@ -1,0 +1,28 @@
+{
+  "name": "revel-vintage-scroll-experience",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0",
+    "export": "STATIC_EXPORT=1 next build && node scripts/make-standalone.mjs",
+    "assets": "python3 scripts/build-assets.py",
+    "qa": "node scripts/qa.mjs http://localhost:3000/ docs/qa"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/react": "^19.1.0",
+    "@types/node": "^22.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

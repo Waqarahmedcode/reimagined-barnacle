@@ -1,0 +1,503 @@
+{
+  "base": "http://localhost:3100/",
+  "when": "2026-11-22T23:45:43.995Z",
+  "viewports": [
+    {
+      "viewport": "desktop-1440",
+      "chapters": [
+        {
+          "id": "opening",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 781,
+            "y": 482,
+            "w": 373,
+            "h": 676
+          }
+        },
+        {
+          "id": "meet",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 979,
+            "y": 472,
+            "w": 331,
+            "h": 659
+          }
+        },
+        {
+          "id": "details",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 720,
+            "y": 479,
+            "w": 316,
+            "h": 662
+          }
+        },
+        {
+          "id": "feeling",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 713,
+            "y": 479,
+            "w": 398,
+            "h": 708
+          }
+        },
+        {
+          "id": "flavour",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 720,
+            "y": 475,
+            "w": 408,
+            "h": 776
+          }
+        },
+        {
+          "id": "colours",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 1080,
+            "y": 473,
+            "w": 409,
+            "h": 687
+          }
+        },
+        {
+          "id": "finale",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 720,
+            "y": 448,
+            "w": 338,
+            "h": 678
+          }
+        }
+      ],
+      "errors": [],
+      "reverseDeterministic": true,
+      "reverseMismatches": [],
+      "navigation": {
+        "menuOpen": true,
+        "focusInMenu": true,
+        "delta": 0,
+        "menuClosed": true,
+        "theme": "oxblood",
+        "replayY": 0
+      }
+    },
+    {
+      "viewport": "mobile-390",
+      "chapters": [
+        {
+          "id": "opening",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 222,
+            "y": 498,
+            "w": 244,
+            "h": 438
+          }
+        },
+        {
+          "id": "meet",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 271,
+            "y": 401,
+            "w": 196,
+            "h": 384
+          }
+        },
+        {
+          "id": "details",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 195,
+            "y": 369,
+            "w": 154,
+            "h": 323
+          }
+        },
+        {
+          "id": "feeling",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 195,
+            "y": 420,
+            "w": 208,
+            "h": 371
+          }
+        },
+        {
+          "id": "flavour",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 195,
+            "y": 420,
+            "w": 193,
+            "h": 366
+          }
+        },
+        {
+          "id": "colours",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 279,
+            "y": 407,
+            "w": 203,
+            "h": 341
+          }
+        },
+        {
+          "id": "finale",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 195,
+            "y": 390,
+            "w": 181,
+            "h": 363
+          }
+        }
+      ],
+      "errors": [],
+      "reverseDeterministic": true,
+      "reverseMismatches": [],
+      "navigation": {
+        "menuOpen": true,
+        "focusInMenu": true,
+        "delta": 0,
+        "menuClosed": true,
+        "theme": "oxblood",
+        "replayY": 0
+      }
+    },
+    {
+      "viewport": "mobile-320",
+      "chapters": [
+        {
+          "id": "opening",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 182,
+            "y": 378,
+            "w": 156,
+            "h": 281
+          }
+        },
+        {
+          "id": "meet",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 222,
+            "y": 304,
+            "w": 126,
+            "h": 246
+          }
+        },
+        {
+          "id": "details",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 160,
+            "y": 280,
+            "w": 99,
+            "h": 207
+          }
+        },
+        {
+          "id": "feeling",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 160,
+            "y": 318,
+            "w": 133,
+            "h": 238
+          }
+        },
+        {
+          "id": "flavour",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 160,
+            "y": 318,
+            "w": 124,
+            "h": 235
+          }
+        },
+        {
+          "id": "colours",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 229,
+            "y": 309,
+            "w": 130,
+            "h": 219
+          }
+        },
+        {
+          "id": "finale",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 160,
+            "y": 296,
+            "w": 116,
+            "h": 233
+          }
+        }
+      ],
+      "errors": [],
+      "reverseDeterministic": true,
+      "reverseMismatches": []
+    },
+    {
+      "viewport": "tablet-768",
+      "chapters": [
+        {
+          "id": "opening",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 438,
+            "y": 604,
+            "w": 261,
+            "h": 469
+          }
+        },
+        {
+          "id": "meet",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 534,
+            "y": 486,
+            "w": 210,
+            "h": 411
+          }
+        },
+        {
+          "id": "details",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 384,
+            "y": 448,
+            "w": 165,
+            "h": 345
+          }
+        },
+        {
+          "id": "feeling",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 384,
+            "y": 509,
+            "w": 223,
+            "h": 397
+          }
+        },
+        {
+          "id": "flavour",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 384,
+            "y": 509,
+            "w": 206,
+            "h": 392
+          }
+        },
+        {
+          "id": "colours",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 549,
+            "y": 494,
+            "w": 217,
+            "h": 365
+          }
+        },
+        {
+          "id": "finale",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 384,
+            "y": 474,
+            "w": 194,
+            "h": 389
+          }
+        }
+      ],
+      "errors": [],
+      "reverseDeterministic": true,
+      "reverseMismatches": []
+    },
+    {
+      "viewport": "desktop-1920",
+      "chapters": [
+        {
+          "id": "opening",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 1042,
+            "y": 578,
+            "w": 447,
+            "h": 811
+          }
+        },
+        {
+          "id": "meet",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 1306,
+            "y": 567,
+            "w": 397,
+            "h": 791
+          }
+        },
+        {
+          "id": "details",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 960,
+            "y": 575,
+            "w": 379,
+            "h": 795
+          }
+        },
+        {
+          "id": "feeling",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 950,
+            "y": 575,
+            "w": 477,
+            "h": 850
+          }
+        },
+        {
+          "id": "flavour",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 960,
+            "y": 570,
+            "w": 490,
+            "h": 931
+          }
+        },
+        {
+          "id": "colours",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 1440,
+            "y": 567,
+            "w": 491,
+            "h": 825
+          }
+        },
+        {
+          "id": "finale",
+          "hits": [],
+          "overflowX": 0,
+          "can": {
+            "x": 960,
+            "y": 537,
+            "w": 406,
+            "h": 813
+          }
+        }
+      ],
+      "errors": [],
+      "reverseDeterministic": true,
+      "reverseMismatches": []
+    }
+  ],
+  "performance": {
+    "cls": 0,
+    "lcpMs": 604,
+    "lcpElement": "can-shadow",
+    "frames": 587,
+    "frameMsMedian": 16.7,
+    "frameMsP95": 33.4,
+    "framesOver33ms": 39,
+    "transfer": 746484
+  },
+  "reducedMotion": {
+    "errors": [],
+    "chapters": [
+      {
+        "id": "opening",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "meet",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "details",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "feeling",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "flavour",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "colours",
+        "hits": [],
+        "hiddenText": 0
+      },
+      {
+        "id": "finale",
+        "hits": [],
+        "hiddenText": 0
+      }
+    ],
+    "motionFlag": "reduced"
+  },
+  "noJs": {
+    "h1": "A little louder.",
+    "headings": 7,
+    "canVisible": "1"
+  }
+}
