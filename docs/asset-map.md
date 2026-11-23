@@ -7,8 +7,10 @@
 | `public/revel-can.png` | **Supplied** (666×1254 RGBA) | Source of truth for the product. Not edited. Kept as the `<img>` fallback. |
 | `public/revel-can.webp` | Derived from the PNG (`scripts/build-assets.py`) | 209 KB vs 1.3 MB, visually lossless (q92, full-quality alpha). Primary `<picture>` source, preloaded. |
 | `public/revel-can-shadow.webp` | Derived: the can's own alpha, blurred | Pre-baked cast shadow, so no runtime `filter: drop-shadow`. |
-| `public/imagery/can-detail-condensation.webp` | Crop of the supplied PNG | Feeling chapter inset ("Fig. 1"). |
-| `public/imagery/can-detail-label.webp` | Crop of the supplied PNG | Flavour chapter inset. |
+| `public/imagery/pour-glass.svg` | Drawn in code (`scripts/build-illustrations.py`) | Feeling chapter inset ("Fig. 1"). Label-free vector illustration. |
+| `public/imagery/berry-ice-splash.svg` | Drawn in code | Flavour chapter inset. Label-free vector illustration. |
+| `public/textures/glass-droplets.webp` | Procedural lit heightfield (`build-illustrations.py`) | Cold-glass condensation layer on the red Colours chapter. |
+| `public/imagery/can-detail-condensation.webp`, `can-detail-label.webp` | Crops of the supplied PNG | No longer used on the site; kept for future layouts. |
 | `public/imagery/can-detail-lid.webp` | Crop of the supplied PNG | Generated but currently unused; spare for future layouts. |
 | `public/textures/ink-mask.png` | Procedural (seeded noise) | Print-wear mask on display headlines. |
 | `public/textures/paper-grain.svg` | Procedural SVG turbulence | Static grain tile; no per-frame canvas. |

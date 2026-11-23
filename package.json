@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0",
     "export": "STATIC_EXPORT=1 next build && node scripts/make-standalone.mjs",
-    "assets": "python3 scripts/build-assets.py",
+    "assets": "python3 scripts/build-assets.py && python3 scripts/build-illustrations.py",
     "qa": "node scripts/qa.mjs http://localhost:3000/ docs/qa"
   },
   "dependencies": {

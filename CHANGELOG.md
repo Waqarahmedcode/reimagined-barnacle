@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0: Supporting illustrations
+
+- Replaced the two can-crop insets with drawn, label-free illustrations (pour over ice; berries and ice in a splash) and added a cold-glass condensation texture to the red chapter. All generated in code by `scripts/build-illustrations.py`, so they are sharp at any size and need no external service.
+
 ## 2.1.0: Motion polish
 
 - **Desktop pointer parallax:** the can drifts up to ~16 px and rolls ~1.4° with the cursor, on its own layer. It is off for touch devices and reduced motion, and never alters the scroll-driven pose.

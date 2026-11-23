@@ -134,9 +134,9 @@ export function Feeling() {
           <figure className="inset inset--feeling">
             <div className="inset__img" data-reveal="wipe-up" data-phase="hold" data-at="0,0.4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/imagery/can-detail-condensation.webp" width={720} height={540} loading="lazy" decoding="async" alt="Close-up of the REVEL can's shoulder: the lightning-mark logo under beads of condensation." />
+              <img src="/imagery/pour-glass.svg" width={800} height={600} loading="lazy" decoding="async" alt="Illustration of a red sparkling drink being poured over ice into a clear glass." />
             </div>
-            <figcaption data-reveal="up" data-phase="hold" data-at="0.15,0.45">Fig. 1 — Cold, and it shows.</figcaption>
+            <figcaption data-reveal="up" data-phase="hold" data-at="0.15,0.45">Fig. 1 — Pour it over ice.</figcaption>
           </figure>
           <div className="feeling__story" data-reveal="up" data-phase="hold" data-at="0.1,0.5" data-stagger="0.15">
             <span className="kicker">The mouthfeel, in brief</span>
@@ -162,7 +162,7 @@ export function Flavour() {
           <figure className="inset inset--flavour" data-reveal="drift" data-phase="through" data-x="-14,6" data-y="10,-6">
             <div className="inset__img" data-reveal="wipe" data-phase="hold" data-at="0.3,0.7">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/imagery/can-detail-label.webp" width={720} height={540} loading="lazy" decoding="async" alt="Detail of the can label: Red Berry, Natural Flavour, Zero Sugar." />
+              <img src="/imagery/berry-ice-splash.svg" width={800} height={600} loading="lazy" decoding="async" alt="Illustration of red berries and ice cubes in a splash of red liquid." />
             </div>
           </figure>
         </>

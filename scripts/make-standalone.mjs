@@ -52,7 +52,7 @@ for (const f of ['404.html', '404', '_not-found', 'index.txt', '_not-found.txt']
 const mime = { '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
 const dataUri = (file) => `data:${mime[path.extname(file)]};base64,${fs.readFileSync(file).toString('base64')}`;
 const assetUri = {};
-for (const r of ['revel-can.png', 'revel-can.webp', 'revel-can-shadow.webp', 'textures/ink-mask.png', 'textures/paper-grain.svg', ...fs.readdirSync(path.join(out, 'imagery')).map((f) => `imagery/${f}`)]) {
+for (const r of ['revel-can.png', 'revel-can.webp', 'revel-can-shadow.webp', 'textures/ink-mask.png', 'textures/paper-grain.svg', 'textures/glass-droplets.webp', ...fs.readdirSync(path.join(out, 'imagery')).map((f) => `imagery/${f}`)]) {
   assetUri[r] = dataUri(path.join(out, r));
 }
 // Single-file build only: every browser that runs this page decodes WebP, so the
