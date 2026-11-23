@@ -1,8 +1,12 @@
 # Changelog
 
-## 2.2.0: Supporting illustrations
+## 2.3.0: Real photography
 
-- Replaced the two can-crop insets with drawn, label-free illustrations (pour over ice; berries and ice in a splash) and added a cold-glass condensation texture to the red chapter. All generated in code by `scripts/build-illustrations.py`, so they are sharp at any size and need no external service.
+- Swapped the drawn placeholders for the supplied photographs: berry splash (Flavour, multiply-blended into the paper), pour over ice (Feeling), berries and ice (new inset in Meet), real condensation (red chapter) and paper fibre (cream chapters). Removed the drawn illustrations and their script.
+
+## 2.2.0: Supporting illustrations (superseded by 2.3.0)
+
+- Drawn, label-free placeholder illustrations. Replaced by the photographs above.
 
 ## 2.1.0: Motion polish
 

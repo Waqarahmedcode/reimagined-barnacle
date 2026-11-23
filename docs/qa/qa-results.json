@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:3100/",
-  "when": "2026-11-23T01:15:38.303Z",
+  "when": "2026-11-23T01:36:35.639Z",
   "viewports": [
     {
       "viewport": "desktop-1440",
@@ -446,13 +446,13 @@
   ],
   "performance": {
     "cls": 0,
-    "lcpMs": 632,
+    "lcpMs": 604,
     "lcpElement": "can-shadow",
-    "frames": 558,
-    "frameMsMedian": 33.3,
+    "frames": 578,
+    "frameMsMedian": 16.7,
     "frameMsP95": 33.4,
-    "framesOver33ms": 57,
-    "transfer": 703843
+    "framesOver33ms": 48,
+    "transfer": 1381273
   },
   "reducedMotion": {
     "errors": [],

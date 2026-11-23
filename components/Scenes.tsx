@@ -50,7 +50,13 @@ export function Meet() {
       back={
         <>
           <Lines id="meet-title" className="display meet__title" lines={['Meet the', <>red berry<i className="dot">.</i></>]} />
-          <p className="meet__vertical" aria-hidden="true">Not here to blend in ✳ Not here to blend in ✳</p>
+          <figure className="inset inset--meet" data-reveal="drift" data-phase="through" data-x="0,0" data-y="10,-10">
+            <div className="inset__img" data-reveal="wipe-up" data-phase="hold" data-at="0,0.4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/imagery/berries-ice.webp" width={1100} height={825} loading="lazy" decoding="async" alt="Fresh strawberries and raspberries with ice cubes and water droplets on cream paper." />
+            </div>
+            <figcaption>Fig. 2 — Fresh, red and cold.</figcaption>
+          </figure>
         </>
       }
       front={
@@ -134,7 +140,7 @@ export function Feeling() {
           <figure className="inset inset--feeling">
             <div className="inset__img" data-reveal="wipe-up" data-phase="hold" data-at="0,0.4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/imagery/pour-glass.svg" width={800} height={600} loading="lazy" decoding="async" alt="Illustration of a red sparkling drink being poured over ice into a clear glass." />
+              <img src="/imagery/pour-glass.webp" width={1400} height={1050} loading="lazy" decoding="async" alt="A red berry sparkling drink poured over ice into a clear glass, bubbles and a splash at the surface." />
             </div>
             <figcaption data-reveal="up" data-phase="hold" data-at="0.15,0.45">Fig. 1 — Pour it over ice.</figcaption>
           </figure>
@@ -159,10 +165,10 @@ export function Flavour() {
       back={
         <>
           <Lines id="flavour-title" className="display flavour__title" lines={['Bright.', 'Berry.', <>Bold<i className="dot">.</i></>]} />
-          <figure className="inset inset--flavour" data-reveal="drift" data-phase="through" data-x="-14,6" data-y="10,-6">
-            <div className="inset__img" data-reveal="wipe" data-phase="hold" data-at="0.3,0.7">
+          <figure className="inset inset--flavour" data-reveal="drift" data-phase="through" data-x="-10,8" data-y="8,-8">
+            <div data-reveal="up" data-phase="hold" data-at="0.1,0.45">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/imagery/berry-ice-splash.svg" width={800} height={600} loading="lazy" decoding="async" alt="Illustration of red berries and ice cubes in a splash of red liquid." />
+              <img src="/imagery/berry-splash.webp" width={1122} height={1402} loading="lazy" decoding="async" alt="Strawberry, raspberries and ice cubes caught mid-air in a splash of red berry juice." />
             </div>
           </figure>
         </>

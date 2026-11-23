@@ -165,9 +165,14 @@ html[data-theme='oxblood'] .menu-toggle, html[data-theme='crimson'] .menu-toggle
 .theme-oxblood .plate--back { background: radial-gradient(90% 90% at 75% 45%, #b63031 0%, var(--red) 55%, #8f1f22 100%); color: var(--cream); }
 .theme-crimson .plate--back { background: radial-gradient(70% 80% at 50% 45%, #b5132e 0%, #8a0319 55%, #520110 100%); color: var(--cream); }
 .theme-oxblood .plate--front, .theme-crimson .plate--front { color: var(--cream); }
+/* Real paper fibre on the cream chapters (cover, not tiled, so no seams). */
+.theme-paper .plate--back::before, .theme-paper-light .plate--back::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
+  background: url('/textures/paper-ink.webp') center / cover no-repeat;
+}
 /* Cold-glass condensation on the red chapter: a static, blended texture (no animation). */
 .theme-oxblood .plate--back::before {
-  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .4; mix-blend-mode: soft-light;
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .55; mix-blend-mode: soft-light;
   background: url('/textures/glass-droplets.webp') center / cover no-repeat;
 }
 
@@ -310,7 +315,9 @@ html[data-theme='oxblood'] .menu-toggle, html[data-theme='crimson'] .menu-toggle
 
 /* ---- 05 Flavour ------------------------------------------------------------------ */
 .flavour__title { position: absolute; left: var(--gutter); top: 17%; font-size: clamp(64px, 8vw, 160px); }
-.inset--flavour { left: calc(var(--gutter) + 1vw); bottom: 9%; width: min(17vw, 260px); transform: rotate(-6deg); }
+.inset--flavour { left: calc(var(--gutter) + 1vw); bottom: 7%; width: min(18vw, 300px); transform: rotate(-3deg); mix-blend-mode: multiply; }
+.inset--flavour img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.inset--meet { right: calc(var(--gutter) + 30px); top: 23%; width: min(14vw, 270px); transform: rotate(3deg); }
 .splash { position: absolute; width: var(--w, 14vw); aspect-ratio: 1; display: grid; place-items: center; text-align: center; }
 .splash__shape { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .splash--red .splash__shape { fill: var(--hot); }
@@ -319,7 +326,7 @@ html[data-theme='oxblood'] .menu-toggle, html[data-theme='crimson'] .menu-toggle
 .splash__mark { font-size: 15px; }
 .splash h3 { font: 400 clamp(26px, 2.4vw, 44px)/1 var(--display); text-transform: uppercase; margin: 2px 0 6px; }
 .splash p { font: 500 clamp(11px, .9vw, 14px)/1.35 var(--body); }
-.splash--a { --w: 13vw; left: 21%; top: 55%; }
+.splash--a { --w: 13vw; left: 23.5%; top: 56%; }
 .splash--b { --w: 15vw; left: 66%; top: 14%; }
 .splash--c { --w: 13vw; left: 70%; top: 57%; }
 
@@ -439,7 +446,8 @@ html[data-theme='oxblood'] .menu-toggle, html[data-theme='crimson'] .menu-toggle
   .feeling__story .kicker { font-size: 8px; }
 
   .flavour__title { top: 12%; font-size: 11.5vw; }
-  .inset--flavour { left: auto; right: var(--gutter); bottom: auto; top: 13%; width: 30vw; }
+  .inset--flavour { left: auto; right: var(--gutter); bottom: auto; top: 11%; width: 27vw; }
+  .inset--meet { display: none; }
   .splash--a, .splash--b, .splash--c { --w: 29vw; top: auto; bottom: calc(52px + var(--safe-b)); }
   .splash--a { left: 3vw; }
   .splash--b { left: 35.5vw; }
