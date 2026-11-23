@@ -11,8 +11,9 @@ export default function Experience() {
   const body = useRef<HTMLDivElement>(null);
   const shadow = useRef<HTMLDivElement>(null);
   const intro = useRef<HTMLDivElement>(null);
+  const float = useRef<HTMLDivElement>(null);
   const meter = useRef<HTMLDivElement>(null);
-  const can = useMemo<CanRefs>(() => ({ rig, body, shadow, intro }), []);
+  const can = useMemo<CanRefs>(() => ({ rig, body, shadow, intro, float }), []);
 
   const [active, setActive] = useState(0);
   const [scrolled, setScrolled] = useState(false);

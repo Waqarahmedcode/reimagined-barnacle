@@ -25,6 +25,7 @@ export type CanRefs = {
   body: RefObject<HTMLDivElement | null>;
   shadow: RefObject<HTMLDivElement | null>;
   intro: RefObject<HTMLDivElement | null>;
+  float: RefObject<HTMLDivElement | null>;
 };
 
 type Options = {
@@ -126,7 +127,25 @@ export function useStoryEngine({ can, meter, onActive, onScrolled }: Options) {
           gsap.set('[data-reveal] , [data-reveal] .ln-i', { clearProps: 'all' });
         }
 
+        // Desktop pointer parallax: a few px of drift + a hair of roll on its own layer,
+        // so it never alters the scroll-derived pose that QA checks for determinism.
+        let offPointer: (() => void) | null = null;
+        const floatEl = can.float.current;
+        if (!reduce && !compact && floatEl && window.matchMedia('(pointer: fine)').matches) {
+          const qx = gsap.quickTo(floatEl, 'x', { duration: 0.9, ease: 'power3.out' });
+          const qy = gsap.quickTo(floatEl, 'y', { duration: 0.9, ease: 'power3.out' });
+          const qr = gsap.quickTo(floatEl, 'rotation', { duration: 1.1, ease: 'power3.out' });
+          const onMove = (e: PointerEvent) => {
+            const nx = e.clientX / window.innerWidth - 0.5;
+            const ny = e.clientY / window.innerHeight - 0.5;
+            qx(nx * -16); qy(ny * -10); qr(nx * 1.4);
+          };
+          window.addEventListener('pointermove', onMove, { passive: true });
+          offPointer = () => { window.removeEventListener('pointermove', onMove); gsap.set(floatEl, { clearProps: 'transform' }); };
+        }
+
         return () => {
+          offPointer?.();
           window.removeEventListener('scroll', render);
           if (tick) gsap.ticker.remove(tick);
           lenis?.destroy();

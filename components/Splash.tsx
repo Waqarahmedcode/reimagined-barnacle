@@ -7,7 +7,7 @@ export default function Splash({ seed, tone, title, children, className, rot = -
   const s = makeSplash(seed);
   return (
     <div className={`splash splash--${tone} ${className ?? ''}`} data-reveal="bloom" data-phase={phase} data-at={at} data-rot={rot}>
-      <svg viewBox="35 35 130 130" aria-hidden="true" className="splash__shape">
+      <svg viewBox="35 35 130 130" aria-hidden="true" className="splash__shape" data-reveal="spin" data-phase="through" data-deg={rot > 0 ? 9 : -9}>
         <path d={s.body} />
         {s.drops.map((d, i) => <circle key={i} cx={d.cx} cy={d.cy} r={d.r} />)}
       </svg>

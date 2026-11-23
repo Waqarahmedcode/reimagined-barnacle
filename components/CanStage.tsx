@@ -17,6 +17,7 @@ export default function CanStage({ refs }: { refs: CanRefs }) {
     <div className="can-layer">
       <div className="can-intro" ref={refs.intro} data-intro-can>
         <div className="can-rig" ref={refs.rig}>
+          <div className="can-float" ref={refs.float}>
           <div className="can-shadow" ref={refs.shadow} aria-hidden="true" />
           <div className="can-body" ref={refs.body}>
             <picture>
@@ -42,6 +43,7 @@ export default function CanStage({ refs }: { refs: CanRefs }) {
                 </li>
               ))}
             </ul>
+          </div>
           </div>
         </div>
       </div>

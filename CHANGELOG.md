@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.0: Motion polish
+
+- **Desktop pointer parallax:** the can drifts up to ~16 px and rolls ~1.4° with the cursor, on its own layer. It is off for touch devices and reduced motion, and never alters the scroll-driven pose.
+- **Depth drift** on the opening arc, details grid and feeling halftone, so back-plate layers move at a different speed from the type.
+- **Splash spin:** each ink splash rotates slightly across its chapter, on top of its bloom.
+- QA re-run: all five viewports clean and reverse-deterministic; frame timing unchanged in repeat runs.
+
 ## 2.0.0: Cinematic edition
 
 ### Kept from v1

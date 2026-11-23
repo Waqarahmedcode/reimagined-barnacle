@@ -22,7 +22,7 @@ export function Opening() {
             <SealRing id="ring-opening" text="REVEL · RED BERRY · ISSUE Nº 001 · EST. MMXXVI · " />
             <b>R</b>
           </div>
-          <div className="opening__arc" aria-hidden="true" />
+          <div className="opening__arc" aria-hidden="true" data-reveal="drift" data-phase="through" data-x="0,-6" data-y="0,10" />
         </>
       }
       front={
@@ -80,7 +80,7 @@ export function Details() {
       back={
         <>
           <Lines id="details-title" className="display details__title" lines={['355 mL', 'of', <>attitude<i className="dot">.</i></>]} />
-          <div className="details__grid" aria-hidden="true" />
+          <div className="details__grid" aria-hidden="true" data-reveal="drift" data-phase="through" data-x="0,0" data-y="-3,3" />
         </>
       }
       front={
@@ -118,7 +118,7 @@ export function Feeling() {
       labelledBy="feeling-title"
       back={
         <>
-          <div className="halftone" aria-hidden="true" />
+          <div className="halftone" aria-hidden="true" data-reveal="drift" data-phase="through" data-x="6,-8" data-y="-6,10" />
           <h2 id="feeling-title" className="display feeling__title">
             <span className="feeling__row" data-reveal="drift" data-phase="through" data-x="6,-6">
               <Lines as="span" lines={['The good kind']} />
